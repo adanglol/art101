@@ -1,0 +1,127 @@
+body{
+  margin:0;
+  padding:0px;
+  border:0px;
+  font-family:sans-serif;
+  background-color:#cccccc;
+}
+/* Welcome Header */
+.welcome{
+  color:#e3cfcf;
+  text-align:center;
+  border:5px dashed rgb(0,0,0);
+  background-color:#493e4f;
+
+}
+
+/* Header side by side Animation*/
+@keyframes sidebysideWelcome{
+  0% {margin-left:100px}
+  10%{margin-left: 500px}
+  20%{margin-right: 100px}
+  30%{margin-right: 500px}
+  40%{margin-left: 100px}
+  50%{margin-left: 500px}
+  60%{margin-right: 100px}
+  70%{margin-right: 500px}
+  80%{margin-left: 100px}
+  90%{margin-left: 500px}
+  100%{right:100px}
+}
+
+.welcome h1.animate{
+
+  animation: sidebysideWelcome 20s infinite;
+}
+
+/* Navbar*/
+.topnav{
+  display:flex;
+  background-color :#333;
+  overflow:hidden;
+  margin:0px;
+
+}
+
+.topnav a{
+  text-decoration:none;
+  padding:20px 20px;
+  font-size:20px;
+  color:white;
+}
+
+.topnav a:hover{
+  background-color:#bfbfbf;
+  color:black;
+}
+
+.topnav a.active{
+  background-color:#a83232;
+}
+
+/* About me-Section*/
+.section{
+  display:flex;
+  justify-content:space-between;
+  background-color:#5e5c5c;
+  color:white;
+  padding:40px 40px;
+  width:90%;
+  margin:1rem auto 1rem auto;
+  border:10px solid black;
+}
+.section h1{
+  margin:0;
+  text-align: left;
+  color:white;
+}
+
+.section h2{
+  margin:20px;
+
+}
+
+.section h1.center{
+  text-align:center;
+}
+
+.section p{
+  color:white;
+  font-size:20px;
+  margin:20px 20px;
+
+}
+.section img{
+  height:550px;
+  border-radius:10%;
+
+}
+
+.section ul li a {
+  text-decoration:none;
+  color:white
+}
+
+.section ul li a:hover{
+  color:#8f8f8f;
+
+}
+
+/* Footer*/
+.footer{
+  position: static;
+
+
+  width: 100%;
+  height:300px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border:1px solid black;
+}
+
+
+
+
+
+}
