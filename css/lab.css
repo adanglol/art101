@@ -1,0 +1,22 @@
+.grid-layout{
+  display:grid;
+  grid-template-columns:auto;
+  grid-gap:20px;
+  padding:10px;
+}
+
+
+.grid-item{
+  display:block;
+  text-decoration:none;
+  color:#333;
+  border:5px solid black;
+  padding:20px;
+  font-size:24px;
+  text-align:center;
+}
+
+.grid-item:hover{
+  color:white;
+  background-color:#333;
+}
