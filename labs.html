@@ -6,6 +6,11 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <!-- Adding a lubrary that allows to add a hamburger menu-->
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 
     <link rel="stylesheet" type="text/css" href="css/site.css">
     <link rel="stylesheet" type="text/css" href="css/lab.css">
@@ -27,7 +32,16 @@
       <div class = "side-side"><a href="about.html">About </a></div>
       <div class = "side-side"><a href="thenews.html">News </a></div>
       <div class = "side-side"><a href="contact.html">Contact </a></div>
-      <div class = "side-side"><a  href="labs.html" class = "active">Labs </a></div>
+      <div class = "side-side"><a href="labs.html" class="active" class="labs">Labs </a></div>
+
+      <!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
+        <!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
+        <a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+
+
     </div>
 
 

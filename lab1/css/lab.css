@@ -1,0 +1,147 @@
+/* Making a responsive grid layout within */
+
+.go{
+  text-align: center;
+}
+
+.grid{
+  display:grid;
+  padding:16px;
+  grid-gap:16px;
+
+}
+
+/* class to style our col elements within our grid*/
+[class*="col"] {
+  background-color:#5e5c5c;
+  color:white;
+  border:10px solid black;
+
+  /* margin bottom for our mobile view*/
+  /*margin-bottom:16px; */
+
+  padding:8px;
+}
+
+/*Styling each tile for grid use grid row to manipulate moving tiles*/
+
+/* div with image*/
+[class*="one"]{
+  grid-row:;
+
+}
+
+/*selecting discord intro div*/
+[class*="two"]{
+  grid-row:1;
+  height:auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+[class*="two"] h1{
+  text-align:center;
+}
+
+[class*="two"] h1+p{
+  text-align:center;
+  font-size:20px;
+}
+
+#intro-list li{
+  text-align:center;
+  font-size:20px;
+}
+
+
+ul{
+  display:table;
+  margin:0 auto;
+}
+
+[class*="three"] {
+  text-align:center;
+}
+
+[class*="three"] h1 + p{
+  font-size:20px;
+}
+
+ul li{
+  font-size:20px;
+}
+
+
+/* To be continued for tommorrow
+Finish styling the last column as well as adjusting media queries for responsiveness then apply that to our Home page and otehr layouts on future sites
+*/
+
+[class*="five"] h1{
+  text-align:center;
+}
+
+[class*="five"] h1+p{
+  text-align:center;
+  font-size:20px;
+}
+
+[class*="five"] ul li a{
+  text-decoration:none;
+  color:white;
+}
+
+[class*="five"] ul li a:hover{
+  color:#8f8f8f;
+}
+
+
+
+
+
+/*Selecting images inside each grid tile */
+[class*="col"] img{
+  width:100%;
+  max-width:100%;
+}
+
+
+
+
+@media screen and (min-width:1200px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+
+
+/* grid layout for standard tablet size continue with the video to make responsive grid layout 9:22 in*/
+/*@media (max-width:900px){
+  .grid{
+    /* Grid gap adds the gap between the columns and rows but not the edges this is where padding comes in on top */
+    /*grid-gap:16px; */
+    /*repeat does repeats colums fr means fraction unit helps with funky layouts (2columns , 1 fractional unit) */
+/*
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+*/
+
+
+
+/* making grid responsive at different break points
+@media (min-width:960px){
+  .grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media (min-width:1200px){
+  .grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+}
+*/

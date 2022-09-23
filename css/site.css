@@ -6,7 +6,6 @@
 body{
   margin:0px;
   font-family:'Josefin Sans',sans-serif;
-  border:5px outset black;
   background-color:#a19e97;
 }
 
@@ -14,8 +13,6 @@ body{
 
 .welcome {
   color:#e3cfcf;
-
-
   background-color:#493e4f;
   text-align:center;
   margin:0px;
@@ -58,8 +55,8 @@ body{
   padding:20px 40px;
   margin:0px;
   background-color:#333;
-  border:5px outset black;
   color:white;
+  border:5px outset black;
 }
 
 .side-side{
@@ -85,8 +82,39 @@ body{
 
 }
 
-/* Section*/
 
+/* HamburgerMenu for our NavBar for responsiveness*/
+.nav-bar a.icon{
+  display:none;
+  text-decoration:none;
+  font-size:30px;
+  color:white;
+}
+
+
+
+/* Media Querry for response nav*/
+@media screen and (max-width:768px){
+  .nav-bar :not(:first-child){
+    display:none;
+  }
+
+  .nav-bar a.icon{
+    display:block;
+  }
+
+
+
+
+  }
+
+
+
+
+
+
+
+/* Section*/
 /* About me-Section*/
 .section{
   display:flex;
@@ -169,4 +197,20 @@ body{
   color:white;
 }
 
-/* NEw Section grid for about r  */
+/* Media Querry to change bg color of body if viewport is 480 pixel or wider if not stays same color */
+/*
+@media screen and (min-width:480px){
+  body{
+    background-color:red;
+  }
+}
+
+
+@media screen and (max-width:480px){
+
+
+  main{
+    margin-left:216px;
+  }
+}
+*/
