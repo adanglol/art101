@@ -10,6 +10,11 @@
     <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/site.css">
+
+    <link rel="stylesheet" type="text/css" href="lab1/css/lab.css">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -21,16 +26,17 @@
       <h1>Welcome to my Class Website!</h1>
     </div>
 
-    <div class = "nav-bar">
-      <div class = "side-side"><a href="index.html" class = "active">Home </a></div>
-      <div class = "side-side"><a href="about.html">About </a></div>
-      <div class = "side-side"><a href="thenews.html">News </a></div>
-      <div class = "side-side"><a href="contact.html">Contact </a></div>
-      <div class = "side-side"><a href="labs.html" class="lab">Labs </a></div>
+  
+    <div class = "nav-bar" id="Top-Nav">
+      <a class= "nav-home active" href="index.html">Home </a>
+      <a class = "nav-about" href="about.html">About </a>
+      <a class = "nav-news" href="thenews.html">News </a>
+      <a class = "nav-contact" href="contact.html">Contact </a>
+      <a class = "nav-labs" href="labs.html">Labs </a>
 
       <!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
         <!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
-      <a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+      <a href="javascript:void(0);" class="icon" onclick="ToggleMenu()">
           <i class="fa fa-bars"></i>
       </a>
 
@@ -39,13 +45,16 @@
 
     	<main>
 
-        <div class="section">
-    			<div class = "text">
-    				<h1 class="center">Aaron Dangc</h1>
-    				<br>
-    				<h2>About Me</h2>
-    				<br>
-    				<p style="line-height:1.5">
+        <div class="grid">
+
+          <div class ="col-one"><img src="img/cop.jpg" alt = "About-Me Image" style="height:700px;border-radius:10%;border:5px solid black;"></img></div>
+
+    			<div class ="col-two">
+    				<h1>Aaron Dangc</h1>
+            <br>
+            <h2>About Me</h2>
+            <br>
+            <p style="line-height:1.5; font-size:20px;">
     					Hello my name is Aaron Dangc. I am currently an incoming third year at UCSC.
     					I guess to start off with knowing more about me is where I am from.
     					I was born and raised in Merced,CA which is located in the Central Valley.
@@ -63,22 +72,19 @@
     					anime, as well as going outside, and been finding fun in coding. The ability to
     					be able to make something that can help others in form of entertainment or functionality
     					has been making me strive to do so.
-
+            </p>
     			</div>
-    					<img src="img/cop.jpg"></img>
-    				</p>
-    		</div>
 
-    		<div class="section">
-    			<div class="text">
+          <div class = "col-three">
+            <h2 style = "text-align:left;">Courses</h2>
+            <br>
 
-    				<br>
-    				<h2>Courses</h2>
-    				<br>
-    				<p style="line-height:1.5">
+            <p style="line-height:1.5;text-align:left;">
     				Over the course of my two years attending UCSC, I was a CS:GD major before I switched to AGPM.
     				I could say that I have had a fair share of Computer Science and Programming classes to note and they are:
-    				<ul>
+            <br>
+            <br>
+    				<ul class ="link">
     					<b>
     					<li><a href="https://catalog.ucsc.edu/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-20" target="_blank">CSE 20 (Beginning Programming in Python)</a></li>
     					<br>
@@ -96,48 +102,53 @@
     					</b>
 
     				</ul>
-    			</div>
-    					<img src="img/mainframe.jpg"></img>
-    				</p>
-    		</div>
 
-    		<div class="section">
-    			<div class="text">
+          </div>
 
-    				<br>
-    				<h2>Interests and Goals</h2>
-    				<br>
-    				<p style="line-height:1.5">
-    				20 years from now if someone asked me where I wanted to be it would be this:
-    				<br>
-    				<br>
-    				<b>"As someone striving to do better in the pursuit for using technology to inspire others!"</b>
-    				<br>
-    				<br>
-    				<b>Here are some of my goals!</b>
+          <div class ="col-four"><img src="img/mainframe.jpg" alt = "Image of Code" style="height:700px;border-radius:10%;border:5px solid black;"></img></div>
 
-    				<ul>
-    					<b>
-    					<li>Graduate from UCSC with my BA in AGPM</li>
-    					<br>
-    					<li>To prepare myself for a job or an internship by the time I get out of college</li>
-    					<br>
-    					<li>Expand my knowledge of HTML, CSS, and JavaScript, as well as other programing languagues and design programs to prepare myself for UX design, Web development, or Game Design</li>
-    					<br>
-    					<li>To look back from where I am at and said that I made it</li>
-    					<br>
-    					<li>Go travel and explore different parts of the world</li>
-    					<br>
-    					<li>Get my money up</li>
-    					<br>
-    					<li>To help others in the field that I choose to work in through my skills</li>
-    					</b>
+          <div class = "col-five">
+            <h2 style ="text-align:left;">Interests and Goals</h2>
 
-    				</ul>
-    			</div>
-    					<img src="img/Goals.jfif"></img>
-    				</p>
-    		</div>
+            <p style="line-height:1.5">
+            20 years from now if someone asked me where I wanted to be it would be this:
+            <br>
+            <br>
+            <b>"As someone striving to do better in the pursuit for using technology to inspire others!"</b>
+            <br>
+            <br>
+            Here are some of my goals!
+
+            <ul>
+              <b>
+              <li>Graduate from UCSC with my BA in AGPM</li>
+              <br>
+              <li>To prepare myself for a job or an internship by the time I get out of college</li>
+              <br>
+              <li>Expand my knowledge of HTML, CSS, and JavaScript, as well as other programing languagues and design programs to prepare myself for UX design, Web development, or Game Design</li>
+              <br>
+              <li>To look back from where I am at and said that I made it</li>
+              <br>
+              <li>Go travel and explore different parts of the world</li>
+              <br>
+              <li>Get my money up</li>
+              <br>
+              <li>To help others in the field that I choose to work in through my skills</li>
+              </b>
+
+            </ul>
+
+
+
+
+
+          </div>
+
+          <div class = "col-six"><img src="img/Goals.jfif" alt = "goals" style="height:700px;border-radius:10%;border:5px solid black;"></img></div>
+
+        </div>
+
+        </main>
 
 
 
@@ -155,8 +166,9 @@
             <a href="contact.html">Contact</a>
             <a href="lab.html">Labs</a>
           </div>
+        </div>
 
-      </main>
+
 
 
     		<script src="js/site.js"></script>

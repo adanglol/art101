@@ -25,87 +25,87 @@ body{
   border:5px outset black;
 }
 
-/*animate*/
-/* Header side by side Animation*/
-@keyframes sidebysideWelcome{
-  0% {margin-left:100px}
-  10%{margin-left: 500px}
-  20%{margin-right: 100px}
-  30%{margin-right: 500px}
-  40%{margin-left: 100px}
-  50%{margin-left: 500px}
-  60%{margin-right: 100px}
-  70%{margin-right: 500px}
-  80%{margin-left: 100px}
-  90%{margin-left: 500px}
-  100%{right:100px}
-}
-
-.welcome h1.animate{
-
-  animation: sidebysideWelcome 20s infinite;
-}
-
 
 /*navbar*/
-
 .nav-bar {
   display:flex;
   justify-content:space-between;
-  padding:20px 40px;
+  text-align:center;
   margin:0px;
   background-color:#333;
   color:white;
   border:5px outset black;
 }
 
-.side-side{
-  display:inline-block;
-  font-size:30px;
-}
-
-.side-side a{
+.nav-bar a {
+  /*Styling the links inside of the navbar */
   text-decoration:none;
+  font-size:30px;
   color:white;
-
+  /* Keep the spacing consistant between the links inside the navbar*/
+  padding:20px;
 }
 
-.side-side a:hover{
-  text-decoration: underline;
+.nav-bar a:hover{
+  background-color:#a19e97;
+  color:black;
+  border-radius:10px;
+  border:5px solid black;
+
+
+  /*text-decoration: underline;
   color:#c2beb4;
+  */
 }
 
-.side-side a.active{
+.nav-bar a.active{
   background-color:#a83232;
   border-radius:10px;
   padding:20px;
 
 }
 
+/* Hamburger Menu to make our Nav-bar responsive so we will hide it*/
 
-/* HamburgerMenu for our NavBar for responsiveness*/
 .nav-bar a.icon{
   display:none;
-  text-decoration:none;
-  font-size:30px;
-  color:white;
 }
 
 
 
-/* Media Querry for response nav*/
-@media screen and (max-width:768px){
+
+
+/* Media Querry for response nav hamburger Menu*/
+
+
+@media screen and (max-width:760px){
+
   .nav-bar :not(:first-child){
     display:none;
-  }
+    }
 
   .nav-bar a.icon{
+    text-align:right;
+    display:block;
+    top:1;
+    right:0;
+    position:absolute;
+    }
+
+  .nav-bar a.icon:hover{
+    padding:15px;
+  }
+  }
+
+@media screen and (max-width:760px){
+  .nav-bar.responsive [class*="nav"]{
+    text-align:left;
     display:block;
   }
-
-
-
-
+  .nav-bar.responsive{
+    position:relative;
+    flex-direction:column;
+    text-align:left;
   }
 
 
@@ -114,55 +114,29 @@ body{
 
 
 
-/* Section*/
-/* About me-Section*/
-.section{
-  display:flex;
-  justify-content:space-between;
-  background-color:#5e5c5c;
+
+}
+
+
+
+
+
+
+
+
+/* Using grid layout from labcss going to style other elements within the home page*/
+
+ul.link li a{
   color:white;
-  padding:40px 40px;
-  width:90%;
-  margin:1rem auto 1rem auto;
-  border:10px solid black;
-}
-.section h1{
-  margin:0;
-  text-align: left;
-  color:white;
-}
-
-.section h2{
-  margin:20px;
-
-}
-
-.section h1.center{
-  text-align:center;
-}
-
-.section p{
-  color:white;
-  font-size:20px;
-  margin:20px 20px;
-
-}
-.section img{
-  height:550px;
-  border-radius:10%;
-  border:5px solid black;
-
-}
-
-.section ul li a {
   text-decoration:none;
-  color:white
 }
 
-.section ul li a:hover{
-  color:#8f8f8f;
+ul.link li a:hover{
+  color:#c2beb4;
 
 }
+
+
 
 /* Footer*/
 .footer{
@@ -185,9 +159,6 @@ body{
 
 /* footernav*/
 .footer-nav{
-
-
-
 }
 
 .footer-nav a{
@@ -196,21 +167,3 @@ body{
   font-size:20px;
   color:white;
 }
-
-/* Media Querry to change bg color of body if viewport is 480 pixel or wider if not stays same color */
-/*
-@media screen and (min-width:480px){
-  body{
-    background-color:red;
-  }
-}
-
-
-@media screen and (max-width:480px){
-
-
-  main{
-    margin-left:216px;
-  }
-}
-*/

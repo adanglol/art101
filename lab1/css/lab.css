@@ -1,8 +1,5 @@
 /* Making a responsive grid layout within */
 
-.go{
-  text-align: center;
-}
 
 .grid{
   display:grid;
@@ -16,11 +13,13 @@
   background-color:#5e5c5c;
   color:white;
   border:10px solid black;
+  font-size:20px;
+  text-decoration:none;
 
   /* margin bottom for our mobile view*/
   /*margin-bottom:16px; */
 
-  padding:8px;
+  padding:10px;
 }
 
 /*Styling each tile for grid use grid row to manipulate moving tiles*/
@@ -69,6 +68,7 @@ ul{
 
 ul li{
   font-size:20px;
+
 }
 
 
@@ -107,11 +107,11 @@ Finish styling the last column as well as adjusting media queries for responsive
 
 
 
+
 @media screen and (min-width:1200px){
   .grid{
     grid-template-columns:repeat(2,1fr);
   }
-
 }
 
 
