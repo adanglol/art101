@@ -25,6 +25,37 @@ body{
   border:5px outset black;
 }
 
+/* Adding a clock to class website styling it*/
+
+#myClock{
+    color:#e3cfcf;
+  font-size:26pt;
+  border:5px outset black;
+  border-top-style: none;
+  border-bottom-style: none;
+  padding:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*navbar*/
 .nav-bar {
