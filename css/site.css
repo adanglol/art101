@@ -28,33 +28,16 @@ body{
 /* Adding a clock to class website styling it*/
 
 #myClock{
-    color:#e3cfcf;
+  color:#e3cfcf;
   font-size:26pt;
   border:5px outset black;
   border-top-style: none;
   border-bottom-style: none;
+
   padding:20px;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*navbar*/
@@ -66,6 +49,7 @@ body{
   background-color:#333;
   color:white;
   border:5px outset black;
+  border-bottom-style: 1px solid black;
 }
 
 .nav-bar a {
@@ -82,6 +66,7 @@ body{
   color:black;
   border-radius:10px;
   border:5px solid black;
+
 
 
   /*text-decoration: underline;
@@ -169,7 +154,7 @@ ul.link li a:hover{
   background-color: #333;
   color: white;
   text-align: center;
-  border:5px solid black;
+  border:10px outset black;
   margin:1rem 1rem 1rem 1rem;
 
 }
@@ -182,6 +167,9 @@ ul.link li a:hover{
 
 /* footernav*/
 .footer-nav{
+  display:flex;
+  justify-content:space-between;
+  border:5px outset black;
 }
 
 .footer-nav a{
@@ -189,4 +177,31 @@ ul.link li a:hover{
   padding:20px 20px;
   font-size:20px;
   color:white;
+}
+
+.footer-nav a:hover{
+  background-color:#a19e97;
+  color:black;
+  border-radius:10px;
+  border:5px solid black;
+}
+
+/* Making the size consitant on my logos to my socials*/
+
+.social-nav {
+  position:relative;
+
+
+}
+
+.social-nav a:hover{
+  border:5px outset black;
+  background-color:#a19e97;
+}
+
+
+#socials {
+  width:100px;
+  border-radius:50%;
+  padding:20px;
 }

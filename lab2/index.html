@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 2 - HTML/CSS Starter</title>
+
+	<!-- Linking the website css sheet and lab sheet for grid layout-->
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../lab1/lab.css">
+
+
+
+	<!-- Linking the fonts for my class website-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+		<!-- Adding a lubrary that allows to add a hamburger menu-->
+		<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+
+
+
+
 </head>
 <body>
 
+
+	<div class = "welcome">
+		<h1>Lab 2 - HTML/CSS Starter</h1>
+	</div>
+
+	<div class = "welcome">
+			<div id="myClock">
+			</div>
+	</div>
+
+
+	<div class="nav-bar" id="Top-Nav">
+		<a class = "nav-home" href = "../index.html">Home</a>
+		<a class = "nav-about" href = "../about.html">About</a>
+		<a class = "nav-news" href = "../thenews.html">News</a>
+		<a class = "nav-contact" href = "../contact.html">Contact</a>
+		<a class = "nav-labs active" href = "../labs.html">Labs</a>
+
+		<a href="javascript:void(0);" class = "icon" onclick = "BurgerMenu()">
+			<i class = "fa fa-bars" id="toggle" onclick = "DropDown(this)"></i>
+		</a>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../js/site.js"></script>
 </body>
 </html>

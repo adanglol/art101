@@ -29,37 +29,27 @@ function showTime(){
   var m = date.getMinutes();
   var s = date.getSeconds();
   var session = "AM";
-
-
-
   //fix the clock don't want see zero in getHours
   if (h == 0){
     h=12;
   }
-
   //non military time >12 then -12 and if greater than 12am then turn to pm
   if (h > 12){
     h -= 12;
     session = "PM"
   }
-
-
   //fixing the issue with number less than 10 in digital clock  using ternary operator ? if else statement condition true false
   h = (h<10) ? "0" + h : h;
   m = (m<10) ? "0" + m : m;
   s = (s<10) ? "0" + s : s;
-
-
-
-
-
+// this is where the time will be stored
   var time = 'You are tuning in at' + ' '+ h + ':' + m + ':' + s +' ' + session + " " + 'PST!';
-
+//adding it to our HTML doc
   document.getElementById("myClock").innerText = time;
   document.getElementById("myClock").innerContent = time;
 
   // set timeout
   setTimeout(showTime,1000);
 }
+//call function
 showTime();
-//setInterval(showTime,1000);
