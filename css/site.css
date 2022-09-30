@@ -48,6 +48,7 @@ body{
 /*navbar making it sticky*/
 #Top-Nav{
   position:sticky;
+  position: -webkit-sticky;
   top:0;
 }
 
