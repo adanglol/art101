@@ -1,3 +1,8 @@
+/* This style sheet focuses on the core aspects of what all of websites have header and navbar as well as resposnvness for that as well and font color etc and then also adding a nav sticky bar */
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -186,7 +191,8 @@ ul.link li a:hover{
   border:5px solid black;
 }
 
-/* Making the size consitant on my logos to my socials*/
+/* Making the size consitant on my logos to my socials
+Also added styling with socials and hover effect*/
 
 .social-nav {
   position:relative;
@@ -204,4 +210,13 @@ ul.link li a:hover{
   width:100px;
   border-radius:50%;
   padding:20px;
+}
+
+
+/* adding a class that wil style sticky navbar*/
+
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%;
 }
