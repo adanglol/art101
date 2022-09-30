@@ -1,19 +1,18 @@
 console.log("HelloWorld")
-
 //adding a sticky navbar feature within the site
-window.onscroll = function() {stickyNav()};
+//window.onscroll = function() {stickyNav()};
 //defining two variables the navbar as well as sticky var for using offsetTop DOM
-var navbar = document.getElementById("Top-Nav");
-var sticky = navbar.offsetTop;
+//var navbar = document.getElementById("Top-Nav");
+//var sticky = navbar.offsetTop;
 
-function stickyNav() {
-  if (window.pageYOffset >= sticky){
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky")
+//function stickyNav() {
+  //if (window.pageYOffset >= sticky){
+    //navbar.classList.add("sticky")
+  //} else {
+  //  navbar.classList.remove("sticky")
 
-  }
-}
+//  }
+//}
 
 
 
