@@ -24,6 +24,7 @@
   padding:10px;
 }
 
+
 /*Styling each tile for grid use grid row to manipulate moving tiles*/
 
 /* div with image*/
@@ -103,7 +104,10 @@ Finish styling the last column as well as adjusting media queries for responsive
 /*Selecting images inside each grid tile */
 [class*="col"] img{
   width:100%;
+  height:100%;
   max-width:100%;
+  
+
 }
 
 
@@ -118,32 +122,4 @@ Finish styling the last column as well as adjusting media queries for responsive
 
 
 
-
-/* grid layout for standard tablet size continue with the video to make responsive grid layout 9:22 in*/
-/*@media (max-width:900px){
-  .grid{
-    /* Grid gap adds the gap between the columns and rows but not the edges this is where padding comes in on top */
-    /*grid-gap:16px; */
-    /*repeat does repeats colums fr means fraction unit helps with funky layouts (2columns , 1 fractional unit) */
-/*
-    grid-template-columns:repeat(2,1fr);
-  }
-
-}
-*/
-
-
-
-/* making grid responsive at different break points
-@media (min-width:960px){
-  .grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-}
-
-@media (min-width:1200px){
-  .grid{
-    grid-template-columns:repeat(4,1fr);
-  }
-}
 */
