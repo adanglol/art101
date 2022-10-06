@@ -1,3 +1,5 @@
+/* Our HomePage lab sections displaying each lab all the way to the 13*/
+
 .grid-layout{
   display:grid;
   grid-template-columns:auto;
