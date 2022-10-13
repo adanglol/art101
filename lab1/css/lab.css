@@ -1,7 +1,4 @@
-/* Making a responsive grid layout within
-
- */
-
+/* Making a responsive grid layout within*/
 
 .grid{
   display:grid;
@@ -39,6 +36,10 @@
   line-height: 1.5;
 }
 
+[class*="col"] p.content {
+  line-height: 1.5;
+}
+
 #intro-list li{
   text-align:center;
   font-size:20px;
@@ -51,6 +52,16 @@ ul li{
   font-size:20px;
 }
 
+ul li a.social-link{
+  text-decoration: none;
+  color:white;
+}
+
+ul li a.social-link:hover{
+  color:#8f8f8f;
+}
+
+
 [class*="five"] ul li a{
   text-decoration:none;
   color:white;
@@ -60,20 +71,8 @@ ul li{
   color:#8f8f8f;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (min-width:1200px){
   .grid{
     grid-template-columns:repeat(2,1fr);
   }
 }
-
-
-
-*/

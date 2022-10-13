@@ -221,7 +221,9 @@ Also added styling with socials and hover effect*/
   padding:20px;
 }
 
-
+.align{
+  text-align: center;
+}
 /* adding a class that wil style sticky navbar*/
 
 /*

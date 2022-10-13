@@ -15,7 +15,7 @@ function DropDown(el){
   }
 }
 
-//Function to make our website responsive
+//Function to make our website responsive from w3 schools
 function BurgerMenu(){
   var x = document.getElementById("Top-Nav");
   if(x.className === "nav-bar") {
@@ -25,7 +25,7 @@ function BurgerMenu(){
   }
 }
 
-//For clock on the website functionality
+//For clock on the website functionality from Youtbube Programming with Lam channel
 function showTime(){
   //creating a data instance using new Date() constructor
   var date = new Date();
