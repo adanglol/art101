@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 3 - File Structure and File Transfer</title>
+
+	<!-- Linking the website css sheet and lab sheet for grid layout-->
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../lab1/css/lab.css">
+
+
+
+	<!-- Linking the fonts for my class website-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
 <body>
+
+	<div class = "welcome">
+		<h1>Lab 3 - File Structure and File Transfer</h1>
+	</div>
+
+	<div class = "welcome">
+		<div id="myClock">
+		</div>
+	</div>
+
+
+
+	<div class="nav-bar" id="Top-Nav">
+		<a class = "nav-home" href="../index.html">Home</a>
+		<a class = "nav-about" href="../about.html">About </a>
+		<a class = "nav-news" href="../thenews.html">News </a>
+		<a class = "nav-contact" href="../contact.html">Contact </a>
+		<a class = "nav-labs active" href="../labs.html">Labs </a>
+		<!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
+			<!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
+		<a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+			<i class="fa fa-bars" id="toggle" onclick="DropDown(this)"></i>
+		</a>
+	</div>
+
+
+	<main>
+		<div class="grid">
+			<div class="col-one">
+				<h1>Task 1 : Create a Local File Structure</h1>
+				<br>
+				<p class="content">After setting up our local repository creating a copy template repository of Wes Modes's repository this essentially created our File Struture. Within our File Structure we have a Directory that contains folders and files needed for this class. Which is our HTML, CSS, and JavaScript Files as well as images. The image on the right is picture of my File structure that I created. This is the structure being viewed within Atom Text Editor which we will be using HTML, CSS, and JavaScript on.</p>
+
+
+
+
+			</div>
+
+			<div class="col-two"><img src="img/filestructure.png" alt="File Structure"></div>
+
+			<div class="col-three">
+				<h1>Task 2 : Create an index.html in my art101 folder</h1>
+				<br>
+				<p class="content"> Within our art101 folder we are suppose to create an index.html which will be our homepage for our Class Website. My partner and I both cutomized and created our index.html. Within our homepage of our site we are suppose to include our interests within this page comprising of div, headers, and paragraph tags in html to represent sections as well as keeping the page organized. The pictures on the right show my partners index.html in the editor as well what it looks like locally on the browser for now.</p>
+			</div>
+
+			<div class="col-four">
+				<div class="grid">
+					<div class="col-one"><img src="img/image6.png" alt=""></div>
+					<div class="col-two"><img src="img/image8.png" alt=""></div>
+				</div>
+			</div>
+
+
+			<div class="col-five">
+				<h1>Task 3 : Create an index.html file in our lab3 folder</h1>
+				<br>
+				<p class="content">After creating our index.html and adding stuff to it. The next we had to do was add a index.html in our lab3 which is already done for us after copying Wes's repository with the file structure. So all we ended up doing was styling it up and add some things to our index.html in our lab3 folder. Which comprimised of more screenshots within our index.html in our lab3 folder.</p>
+			</div>
+			<div class="col-six">
+				<div class="grid">
+					<div class="col-one"><img src="img/image1.png" alt="indexinlab3"></div>
+					<div class="col-two"><img src="img/image7.png" alt="indexlab3 in local browser"></div>
+				</div>
+			</div>
+
+
+			<div class="col-seven">
+				<h1>Task 6 : Uploud with Github Desktop</h1>
+				<br>
+				<p class="content">Task 4 and 5 to summarize was to add screenshots to our index.html in our lab3 folder and for to test file locally to make sure it is working in the browser as intended there are no screenshot or documentation neceesary so did not include. Besides from that after testing the file locally and making sure everything work it was time to uploud or push or local repository and update it to our remote repository on Github Desktop. It shows us all our changes and is important for version control as well. You can see our screenshot.</p>
+			</div>
+			<div class="col-eight"><img src="img/image2.png" alt="Github Desktop"></div>
+
+			<div class="col-nine">
+				<h1>Task 7 : Test out our uplouded website</h1>
+				<br>
+				<p class="content">Now that we pushed our changes on Github now we can view our website remotely on the web through GitHub Pages. Yeah now it was time to see our changes and this is helping us teach the loop for working work on local edit work on local test then if good uploud and push to GitHub Desktop. Screenshot shows my partner index.html file.</p>
+			</div>
+			<div class="col-ten"><img src="img/image3.png" alt="partnerindexhtml"></div>
+
+			<div class="col-eleven">
+				<h1>Task X bonus!</h1>
+				<br>
+				<p class="content"> Task was not necessary but a bonus as listed. Basically we showed off our final shows and I will put my index.html on screen shot since I showed my partner in previous picture. Yeah that is the end of this lab it taught us about File structure and the importance of being organized as a programmer.</p>
+			</div>
+			<div class="col-twelve"><img src="img/image4.png" alt="myhomepage"></div>
+
+
+		</div>
+
+
+	</main>
+
+	<div class ="footer">
+		<h2 class ="titlefoot">Created by yours truly,</h2>
+		<br>
+		<h2>-Dangc Aaron</h2>
+		<br>
+
+
+
+		<div class="footer-nav">
+			<a href="../index.html">Home</a>
+			<a href="../about.html">About</a>
+			<a href="../thenews.html">News</a>
+			<a href="../contact.html">Contact</a>
+			<a href="../lab.html">Labs</a>
+		</div>
+		<br />
+		<br />
+		<br />
+
+		<!-- Socials for website Discord,Instagram,Facebook,Linklin,Youtube-->
+		<div class ="social-nav">
+			<a href = "https://discord.com/users/470771035772289024" target = "_blank">
+				<img src= "../img/discord-round-logo.png" alt="Discord-Logo-Picture" id = "socials"/>
+			</a>
+			<a href="https://www.instagram.com/adangnolife/" target="_blank">
+				<img src="../img/instagram-round-logo.png" alt="Instagram-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.facebook.com/adangnolife" target="_blank">
+				<img src="../img/facebook-logo.png" alt="Facebook-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.youtube.com/channel/UCcuY8rAaX1MAW0k0jtTe4OQ" target="_blank">
+				<img src="../img/yt.png" alt="YouTube-Logo-Picture" id="socials"/>
+			</a>
+			<a href="https://www.linkedin.com/in/aaron-dangc-04897123b/" target="_blank">
+				<img src="../img/linkedin-round-logo.png" alt="LinkedIn-Logo-Picture" id="socials"/>
+			</a>
+		</div>
+
+	</div>
+
+	<script src="../js/site.js"></script>
+
+
+
 
 </body>
 </html>

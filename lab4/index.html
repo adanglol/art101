@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Pseudocoding and Problem-solving</title>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+
+	<link rel="stylesheet" type="text/css" href="../lab1/css/lab.css">
+
+
+
+	<!-- Linking the fonts for my class website-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
 <body>
+	<div class = "welcome">
+		<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
+	</div>
+
+	<div class = "welcome">
+		<div id="myClock">
+		</div>
+	</div>
+
+
+
+	<div class="nav-bar" id="Top-Nav">
+		<a class = "nav-home" href="../index.html">Home</a>
+		<a class = "nav-about" href="../about.html">About </a>
+		<a class = "nav-news" href="../thenews.html">News </a>
+		<a class = "nav-contact" href="../contact.html">Contact </a>
+		<a class = "nav-labs active" href="../labs.html">Labs </a>
+		<!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
+			<!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
+		<a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+			<i class="fa fa-bars" id="toggle" onclick="DropDown(this)"></i>
+		</a>
+	</div>
+
+
+	<main>
+		<div class="grid">
+			<div class="col-one">
+				<h1>Task 1 : Pseudocode an everyday task</h1>
+				<br>
+				<p class="content">With me and my partner the first part of our task for lab4 was to pseudocode an everyday task. So we chose to pseudocode how to drive. Since it is a everyday task and transportation is important. Our screenshot shows that. A step by step direction of how to drive. Pseudocoding can be applied in coding as well and is a way to ideate solutions to coding challenges as well as real life breaking things down step by step. </p>
+			</div>
+			<div class="col-two"><img src="img/pseudocode.png" alt="How-To-Drive-PseudoCode"></div>
+
+			<div class="col-three">
+				<h1>Task 2 : Pseudocode a Computer Task</h1>
+				<br>
+				<p class="content">After pseudocoding an everyday task withn our lab4 the next thing to do was to pseudocode a computer task. So my partner and I chose to pseudocode How to save a PDF on the computer which requires a plethra of steps that I think was appropriate to pseudocode. Our pseudocode can be seen by the appropriate screenshot.</p>
+			</div>
+			<div class="col-four"><img src="img/pseudocomp.png" alt="computertask-pseudo"></div>
+
+			<div class="col-five">
+				<h1>Task 3 : Turn PseudoCode into comments</h1>
+				<br>
+				<p class="content">Now that we have our pseudocode written out and how to do it. Now the next thing we did was to do that but put it in comments within our JavaScript file within our lab4 folder. Using comments can help us ideate how to pseudocode out a problem without actually coding yet. But we use <code>//</code> to do that in JavaScript. Within our comment of pseudocode in JavaScript it is important to include our name and date in an author block.</p>
+			</div>
+			<div class="col-six"><img src="img/image2.png" alt="comment-JS"></div>
+
+			<div class="col-seven">
+				<h1>Task 4 : Create an index.html for Lab 4</h1>
+				<br>
+				<p class="content">Now that we had learned about pseudocoding it was now time to sum up our efforts within our index.html in our lab4 folder. Which specifies our Problem, Challenges and Results of this lab. We did so on my partner's file structure. We took a screenshot of our works of pseudocoding </p>
+				<br>
+				<p class="content">If want to check out that page the link will be below : </p>
+				<ul class="link">
+					<li><a href="https://mmahelon.github.io/art101/lab4/index.html">Lab 4 HomePage</a></li>
+				</ul>
+
+			</div>
+			<div class="col-eight"><img src="img/image3.png" alt="Lab4-HomePage"></div>
+		</div>
+
+	</main>
+
+	<div class ="footer">
+		<h2 class ="titlefoot">Created by yours truly,</h2>
+		<br>
+		<h2>-Dangc Aaron</h2>
+		<br>
+
+
+
+		<div class="footer-nav">
+			<a href="../index.html">Home</a>
+			<a href="../about.html">About</a>
+			<a href="../thenews.html">News</a>
+			<a href="../contact.html">Contact</a>
+			<a href="../lab.html">Labs</a>
+		</div>
+		<br />
+		<br />
+		<br />
+
+		<!-- Socials for website Discord,Instagram,Facebook,Linklin,Youtube-->
+		<div class ="social-nav">
+			<a href = "https://discord.com/users/470771035772289024" target = "_blank">
+				<img src= "../img/discord-round-logo.png" alt="Discord-Logo-Picture" id = "socials"/>
+			</a>
+			<a href="https://www.instagram.com/adangnolife/" target="_blank">
+				<img src="../img/instagram-round-logo.png" alt="Instagram-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.facebook.com/adangnolife" target="_blank">
+				<img src="../img/facebook-logo.png" alt="Facebook-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.youtube.com/channel/UCcuY8rAaX1MAW0k0jtTe4OQ" target="_blank">
+				<img src="../img/yt.png" alt="YouTube-Logo-Picture" id="socials"/>
+			</a>
+			<a href="https://www.linkedin.com/in/aaron-dangc-04897123b/" target="_blank">
+				<img src="../img/linkedin-round-logo.png" alt="LinkedIn-Logo-Picture" id="socials"/>
+			</a>
+		</div>
+
+	</div>
+
+
+
+		<script src="../js/site.js"></script>
 
 </body>
 </html>

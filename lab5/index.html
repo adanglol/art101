@@ -4,9 +4,132 @@
 	<title>Lab 5 - Data Type and Variables</title>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+
+	<!-- Linking with the style sheet within the Lab1 folder-->
+	<link rel="stylesheet" type="text/css" href="../lab1/css/lab.css">
+
+
+
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+
+
+	<!-- Font used for Website -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+
 </head>
 <body>
 
+	<div class = "welcome">
+		<h1>Lab 5 - Data Types and Variables</h1>
+	</div>
+
+	<div class = "welcome">
+		<div id="myClock">
+		</div>
+	</div>
+
+
+
+	<div class="nav-bar" id="Top-Nav">
+		<a class = "nav-home" href="../index.html">Home</a>
+		<a class = "nav-about" href="../about.html">About </a>
+		<a class = "nav-news" href="../thenews.html">News </a>
+		<a class = "nav-contact" href="../contact.html">Contact </a>
+		<a class = "nav-labs active" href="../labs.html">Labs </a>
+		<!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
+			<!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
+		<a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+			<i class="fa fa-bars" id="toggle" onclick="DropDown(this)"></i>
+		</a>
+	</div>
+
+	<main>
+
+		<div class="grid">
+			<div class="col-one">
+				<h1>Task 1 : JavaScript Variables</h1>
+				<br>
+				<p class="content">Together with my partner we worked on the JavaScript console to learn about variables. We had to declare variables to hold the model, color, and year of our vehicle well my partner's car to be more precise. As well as declare another value that holds a Boolean value which can only hold True and False. Then finally we had variable for age of our car that subtracted from the year of the current year 2022 with model of car to determ the value of that variable.</p>
+			</div>
+			<div class="col-two"><img src="img/image3.png" alt="JavaScript-Console-Declare-Variables"></div>
+
+			<div class="col-three">
+				<h1>Task 2 : A JavaScript Program</h1>
+				<br>
+				<p class="content">Within our lab5 folder in the js folder we created a new JavaScript Program. Next we are suppose to add a comment block on the top of our program. This should specify our names and when it was created. Having comment blocks is useful for pseudocoding and things to put out of code very useful. After adding comment block we are using the <code>document.writeln()</code> to ouput each variable in new line as well as putting variables we had in console to be redeclared in this program.</p>
+			</div>
+			<div class="col-four"><img src="img/image6.png" alt="JavaScript-Program"></div>
+
+			<div class="col-five">
+				<h1>Task 3 : Create an index.html for Lab 5</h1>
+				<br>
+				<p class="content">After we have created our JavaScript Program within our js folder in lab5 the next thing we did was create an index.html file for our Lab 5. The next thing that was asked of us was to create that html to make it display our JavaScript program by having having a <code>script</code> tag within a <code>div</code> in our HTML file to display our program we just wrote in JavaScript using variables we learned about.</p>
+			</div>
+			<div class="col-six"><img src="img/image7.png" alt="index.html-Lab5"></div>
+
+			<div class="col-seven">
+				<h1>Task 4 : Debug, Uploud, and Test</h1>
+				<br>
+				<p class="content">Now that we added our JavaScript program to our HTML it was now time to Debug it. We had to make sure it works locally so we can push the changes onto GitHub for our class website. To also make sure that our JavaScript Program is working and priniting out the output on HTML. So this screenshot is our final result which is a website that comprises of our Challenges, Problems, and Results from completing this lab all in different sections. We included screenshots within our site and below that you can see the output of our JavaScript Program within our HTML.</p>
+			</div>
+			<div class="col-eight"><img src="img/image5.png" alt="TestedSite-Working"></div>
+
+		</div>
+
+	</main>
+
+	<div class ="footer">
+		<h2 class ="titlefoot">Created by yours truly,</h2>
+		<br>
+		<h2>-Dangc Aaron</h2>
+		<br>
+
+
+
+		<div class="footer-nav">
+			<a href="../index.html">Home</a>
+			<a href="../about.html">About</a>
+			<a href="../thenews.html">News</a>
+			<a href="../contact.html">Contact</a>
+			<a href="../lab.html">Labs</a>
+		</div>
+		<br />
+		<br />
+		<br />
+
+		<!-- Socials for website Discord,Instagram,Facebook,Linklin,Youtube-->
+		<div class ="social-nav">
+			<a href = "https://discord.com/users/470771035772289024" target = "_blank">
+				<img src= "../img/discord-round-logo.png" alt="Discord-Logo-Picture" id = "socials"/>
+			</a>
+			<a href="https://www.instagram.com/adangnolife/" target="_blank">
+				<img src="../img/instagram-round-logo.png" alt="Instagram-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.facebook.com/adangnolife" target="_blank">
+				<img src="../img/facebook-logo.png" alt="Facebook-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.youtube.com/channel/UCcuY8rAaX1MAW0k0jtTe4OQ" target="_blank">
+				<img src="../img/yt.png" alt="YouTube-Logo-Picture" id="socials"/>
+			</a>
+			<a href="https://www.linkedin.com/in/aaron-dangc-04897123b/" target="_blank">
+				<img src="../img/linkedin-round-logo.png" alt="LinkedIn-Logo-Picture" id="socials"/>
+			</a>
+		</div>
+
+	</div>
 
 
 
@@ -17,13 +140,7 @@
 
 
 
-
-
-
-
-
-
-
+	<script src="../js/site.js"></script>
 
 </body>
 </html>
