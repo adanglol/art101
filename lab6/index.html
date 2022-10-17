@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 6 - Arrays and Objects</title>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+
+	<!-- Linking with the style sheet within the Lab1 folder-->
+	<link rel="stylesheet" type="text/css" href="../css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../lab1/css/lab.css">
+
+
+
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+
+
+	<!-- Font used for Website -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
 </head>
 <body>
+	<div class = "welcome">
+		<h1>Lab 6 - Arrays and Objects</h1>
+	</div>
+
+	<div class = "welcome">
+		<div id="myClock">
+		</div>
+	</div>
+
+
+
+	<div class="nav-bar" id="Top-Nav">
+		<a class = "nav-home" href="../index.html">Home</a>
+		<a class = "nav-about" href="../about.html">About </a>
+		<a class = "nav-news" href="../thenews.html">News </a>
+		<a class = "nav-contact" href="../contact.html">Contact </a>
+		<a class = "nav-labs active" href="../labs.html">Labs </a>
+		<!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
+			<!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
+		<a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+			<i class="fa fa-bars" id="toggle" onclick="DropDown(this)"></i>
+		</a>
+	</div>
+
+	<main>
+		<div class="grid">
+			<div class="col-one">
+				<h1>Challenges</h1>
+				<br>
+				<p class="content">For challenges working on this lab I would say that this lab was not too bad. Was bit more difficult but not that much. I did learn about Arrays and Objects within JavaScript. Two major challenges I had was the syntax for writing a Object and Array and another one was about printing the Object I created. But other than that pretty straightfoward Lab although will have to learn more in depth about JSON and how to use it and the methods. Here is a screenshot of me learning objects and arrays within the JavaScript Console.</p>
+			</div>
+			<div class="col-two"><img src="img/objectarrayconsole.png" alt="JavaScript-Object-Array-In-Console"></div>
+
+			<div class="col-three">
+				<h1>Problems</h1>
+				<br>
+				<p class="content">As for problems for the lab I do not think I had any while me and my partner were trying to. Just have to learn about JSON. Making the array and object was pretty straightfoward after following the steps. The screenshot was next step of after using Objects and Arrays in program then proceed to put it in a JavaScript Program.</p>
+			</div>
+			<div class="col-four"><img src="img/lab6js.png" alt="JS-Program"></div>
+
+			<div class="col-five">
+				<h1>Results</h1>
+				<br>
+				<p class="content">The results from this lab was to introduce us to Arrays and Objects. Learning how to create an Array and Object as well as index from list. Think its important to learn because of future assingments using JavaScript. The next section shows the JavaScript within the lab6 folder being outputted to this HTML page.</p>
+			</div>
+			<div class="col-six">
+				<h1>Script Output</h1>
+				<br>
+				<script src="js/lab.js"></script>
+				<p class="content">The content above is the result from my script in lab.js in Lab 6 that outputs the variable myTransport as well as myMainRide the object.</p>
+			</div>
+		</div>
+
+
+
+
+
+	</main>
+
+	<div class ="footer">
+		<h2 class ="titlefoot">Created by yours truly,</h2>
+		<br>
+		<h2>-Dangc Aaron</h2>
+		<br>
+
+
+
+		<div class="footer-nav">
+			<a href="../index.html">Home</a>
+			<a href="../about.html">About</a>
+			<a href="../thenews.html">News</a>
+			<a href="../contact.html">Contact</a>
+			<a href="../lab.html">Labs</a>
+		</div>
+		<br />
+		<br />
+		<br />
+
+		<!-- Socials for website Discord,Instagram,Facebook,Linklin,Youtube-->
+		<div class ="social-nav">
+			<a href = "https://discord.com/users/470771035772289024" target = "_blank">
+				<img src= "../img/discord-round-logo.png" alt="Discord-Logo-Picture" id = "socials"/>
+			</a>
+			<a href="https://www.instagram.com/adangnolife/" target="_blank">
+				<img src="../img/instagram-round-logo.png" alt="Instagram-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.facebook.com/adangnolife" target="_blank">
+				<img src="../img/facebook-logo.png" alt="Facebook-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.youtube.com/channel/UCcuY8rAaX1MAW0k0jtTe4OQ" target="_blank">
+				<img src="../img/yt.png" alt="YouTube-Logo-Picture" id="socials"/>
+			</a>
+			<a href="https://www.linkedin.com/in/aaron-dangc-04897123b/" target="_blank">
+				<img src="../img/linkedin-round-logo.png" alt="LinkedIn-Logo-Picture" id="socials"/>
+			</a>
+		</div>
+
+	</div>
+
+
+	<script src="../js/site.js"></script>
+
+
 
 </body>
 </html>
