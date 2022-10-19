@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 7 - Functions</title>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+
+	<!-- Linking with the style sheet within the Lab1 folder-->
+	<link rel="stylesheet" type="text/css" href="../css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../lab1/css/lab.css">
+
+
+
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+
+
+	<!-- Font used for Website -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<!-- Adding a lubrary that allows to add a hamburger menu-->
+	<link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
 <body>
+
+	<div class = "welcome">
+		<h1>Lab 7 - Functions</h1>
+	</div>
+
+	<div class = "welcome">
+		<div id="myClock">
+		</div>
+	</div>
+
+
+
+	<div class="nav-bar" id="Top-Nav">
+		<a class = "nav-home" href="../index.html">Home</a>
+		<a class = "nav-about" href="../about.html">About </a>
+		<a class = "nav-news" href="../thenews.html">News </a>
+		<a class = "nav-contact" href="../contact.html">Contact </a>
+		<a class = "nav-labs active" href="../labs.html">Labs </a>
+		<!-- Hamburger menu on website only when certain breakpoiint so we have to define first- . Also set flex order to 5 to give appopriate spaceing-->
+			<!-- javascript:void(0) means do nothing no reload or run anycode in JS you can run code that do not change the current page-->
+		<a href="javascript:void(0);" class="icon" onclick="BurgerMenu()">
+			<i class="fa fa-bars" id="toggle" onclick="DropDown(this)"></i>
+		</a>
+	</div>
+
+	<main>
+		<div class="grid">
+			<div class="col-one">
+				<h1>Challenges</h1>
+				<br>
+				<p class="content">Challenges that I faced in this lab was the methods and why the function was having errors in my code as I was following your steps. Then this made me decide too look into what some of these functions do. For <code>toLowerCase()</code> method it takes in a string to be able to lowercse the letters. Fixed around some of the methods so it can lowercase and got it to work. Overall I did learn a lot about functions. Screen shot shows the final result of my JavaScript Program. </p>
+			</div>
+			<div class="col-two"><img src="img/lab7js.png" alt="JavScript-Program-Scramble-Name"></div>
+
+			<div class="col-three">
+				<h1>Problems</h1>
+				<br>
+				<p class="content">Problems that I faced in the labs was just learning new things. About the methods as well as learning about getting user input and displaying it in a wierd way for nick name. To also note debugging helped with this process to utilize <code>Console.log()</code>.</p>
+			</div>
+			<div class="col-four"><img src="img/working.png" alt="working-debugtest"></div>
+
+			<div class="col-five">
+				<h1>Results</h1>
+				<br>
+				<p class="content">Overall this was a satisfying Lab. I learned a lot like functions as well as the different methods that JavaScript has to offer as well as utilizing <code>console.log()</code>. The Script Output shows the new name that I have given you a nick name generator by scrambling your name.</p>
+			</div>
+			<div class="col-six">
+				<h1>Script Output</h1>
+				<br>
+				<div class="box"><h1><script src="js/lab.js"></script></h1></div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+	</main>
+
+	<div class ="footer">
+		<h2 class ="titlefoot">Created by yours truly,</h2>
+		<br>
+		<h2>-Dangc Aaron</h2>
+		<br>
+
+
+
+		<div class="footer-nav">
+			<a href="../index.html">Home</a>
+			<a href="../about.html">About</a>
+			<a href="../thenews.html">News</a>
+			<a href="../contact.html">Contact</a>
+			<a href="../lab.html">Labs</a>
+		</div>
+		<br />
+		<br />
+		<br />
+
+		<!-- Socials for website Discord,Instagram,Facebook,Linklin,Youtube-->
+		<div class ="social-nav">
+			<a href = "https://discord.com/users/470771035772289024" target = "_blank">
+				<img src= "../img/discord-round-logo.png" alt="Discord-Logo-Picture" id = "socials"/>
+			</a>
+			<a href="https://www.instagram.com/adangnolife/" target="_blank">
+				<img src="../img/instagram-round-logo.png" alt="Instagram-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.facebook.com/adangnolife" target="_blank">
+				<img src="../img/facebook-logo.png" alt="Facebook-Logo-Picture" id="socials"/>
+			</a>
+			<a href = "https://www.youtube.com/channel/UCcuY8rAaX1MAW0k0jtTe4OQ" target="_blank">
+				<img src="../img/yt.png" alt="YouTube-Logo-Picture" id="socials"/>
+			</a>
+			<a href="https://www.linkedin.com/in/aaron-dangc-04897123b/" target="_blank">
+				<img src="../img/linkedin-round-logo.png" alt="LinkedIn-Logo-Picture" id="socials"/>
+			</a>
+		</div>
+
+	</div>
+
+	<script src="../js/site.js"></script>
+
 
 </body>
 </html>
