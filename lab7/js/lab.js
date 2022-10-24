@@ -27,7 +27,7 @@ function sortName(){
   //Concatenate our input
   userName = userName.join("");
   //Output
-  return userName.replace(/\s/g, ' ')
+  return userName.replace(/\s/g, ' ');
 
 }
 
