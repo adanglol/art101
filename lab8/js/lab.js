@@ -37,11 +37,35 @@ console.log("Checking whether from listNum if whether each number is even or odd
   var results = (x % 2 == 0);
   return results;
 }));
+
 //Implementing some() method that uses callback on listNum check to see if any elemnent is greater than or equal to 11 will return false since out list is listNum = 1-10 and is not greater or equal to 11
 var isGreatResult = listNum.some(function isGreaterthanEleven(x){
   return x >= 11;
 })
 console.log(isGreatResult);
+
+//Implement a function that accepts a callback function as a parameter and make something happen
+
+//this will be our call back function will print in console
+
+//define callback function that prints 123 in list
+function callBack(){
+  numList = [1,2,3];
+  console.log(numList);
+}
+
+//function calls takes x as function as parameter
+function call(x){
+  x();
+}
+
+//function that calls our call back function to print 123 first passes through call function to make our parameter a function to call
+function acceptsCallback(x){
+  call(x);
+}
+
+acceptsCallback(callBack);
+
 //output our results from this script to our HTML
 var outputEl = document.getElementById("output");
 outputEl.innerHTML = "<h1>" + "Script Output" + "</h1>" + "<br />" + "listNum = " + listNum + "<br />"+ "<br />" + "listNum (Each Element Squared) = " + listNum.map(numSquared) + "<br />"+"<br />" + "Checking each element in listNum to see if even = " +"[" + isresult + "]" + "<br />" + "<br />" + "Checking to see if any element in listNum is greater than or equal to 11 =" + "<h1>" + isGreatResult + "</h1>"
