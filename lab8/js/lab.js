@@ -25,15 +25,15 @@ listNum.map(numSquared);
 console.log("Shows our listNum squared", listNum.map(numSquared));
 
 //Now use new function as callback to map onto array
-//this function is determine whether number is even by diving it by 2 evenly with no remainder
+//this function is determine whether number is even by diving it by 2 evenly with no remainder anon function
 
-var isresult = listNum.map(function isEven(x){
+var isresult = listNum.map(function (x){
   var results = (x % 2 == 0);
   return results;
 })
 
 //output this in our console to ensure it works
-console.log("Checking whether from listNum if whether each number is even or odd", listNum.map(function isEven(x){
+console.log("Checking whether from listNum if whether each number is even or odd", listNum.map(function (x){
   var results = (x % 2 == 0);
   return results;
 }));
