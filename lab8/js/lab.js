@@ -38,8 +38,8 @@ console.log("Checking whether from listNum if whether each number is even or odd
   return results;
 }));
 
-//Implementing some() method that uses callback on listNum check to see if any elemnent is greater than or equal to 11 will return false since out list is listNum = 1-10 and is not greater or equal to 11
-var isGreatResult = listNum.some(function isGreaterthanEleven(x){
+//Implementing some() method that uses callback on listNum check to see if any elemnent is greater than or equal to 11 will return false since out list is listNum = 1-10 and is not greater or equal to 11 used anon functions
+var isGreatResult = listNum.some(function (x){
   return x >= 11;
 })
 console.log(isGreatResult);
