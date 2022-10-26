@@ -1,0 +1,23 @@
+/* Button For lab 9*/
+.button{
+  /* Centering my button by displaying the button as block and messing with left and right margins*/
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:300px;
+
+
+  color:white;
+  font-family:'Josefin Sans',sans-serif;
+
+  padding:20px;
+  background-color: #333;
+
+}
+
+
+.button:hover{
+  background-color:#a19e97;
+  border-radius: 10px;
+  color:black;
+}

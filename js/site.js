@@ -1,4 +1,4 @@
-console.log("HelloWorld")
+console.log("site JS has been initialized!")
 
 
 
