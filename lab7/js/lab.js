@@ -10,9 +10,12 @@ function caseInsensitive(strA,strB){
   return strA.toLowerCase().localeCompare(strB.toLowerCase());
 }
 
-var userName = window.prompt("Hi please tell me your name so I can fix it! ", "human");
+//you can put username outside function as option
+
 // function that returns our Users sorted new Name
 function sortName(){
+
+  var userName = window.prompt("Hi please tell me your name so I can fix it! ", "human");
   //Declare a variable called userName that uses window.prompt() to prompt user to type their user name and get that information
 
   //lets see our changes to see if this works within the console
