@@ -1,0 +1,58 @@
+/* CSS for lab 10 */
+
+
+.anBox {
+  background-color: #493e4f;
+  color:#e3cfcf;
+  text-align:center;
+  border:10px outset black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* for second input form button and text field stylesheet for lab 10 */
+.buttontwo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:300px;
+
+
+  color:white;
+  font-family:'Josefin Sans',sans-serif;
+  font-size: 20px;
+  padding:20px;
+  background-color: #333;
+  text-align: center;
+
+}
+
+.buttontwo:hover {
+  background-color:#a19e97;
+  border-radius: 10px;
+  color:black;
+}
+
+/* To make page glitch want to style */
+
+.center {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.glitch{
+  display:block;
+  color:white;
+  font-family:'Josefin Sans',sans-serif;
+  font-size: 20px;
+  padding:20px;
+  background-color: #333;
+  text-align: center;
+}
+
+.glitch:hover{
+  background-color:#a19e97;
+  border-radius: 10px;
+  color:black;
+}
