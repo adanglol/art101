@@ -96,21 +96,37 @@ function glitchButt(){
   helloWorld.innerHTML = "HELLO WORLD";
   helloWorld.style.color = "white";
 
+
+
   //text
   text = document.createElement("p");
-  text.innerHTML = "fgsdfg";
-
+  text.innerHTML = "An iconic word phrase for every programmer. The start of ones journey to becoming an amazing one. A simple string of text printed in the programming language that the programmer is using. Which in due time they will learn new things and make something that they ever wanted to make with the power of code and a creative mind one line at a time.";
+  text.style.color = "white";
+  text.style.fontSize = "20px"
 
 
   //video
+  video  = document.createElement("iframe");
+  video.style.display = "block";
+  video.style.padding = "20px";
+  video.style.margin = "100px";
+  video.src = "https://www.youtube.com/embed/Yw6u6YkTgQ4?";
+  video.height = "400";
+  video.width = "1000";
 
-  //link
+  console.log(video);
+//<iframe width="1217" height="609" src="https://www.youtube.com/embed/Yw6u6YkTgQ4" title="hello world" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  //link me back
 
 
   document.writeln("---");
   document.body.appendChild(lineBreak);
   document.body.appendChild(helloWorld);
-
+  document.body.appendChild(lineBreak);
+  document.body.appendChild(text);
+  document.body.appendChild(lineBreak);
+  document.body.appendChild(video);
 
 
 
