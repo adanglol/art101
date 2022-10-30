@@ -80,6 +80,8 @@ function wordSort(){
 
 // Lets change up aspects of our page by starting with the first button we created in the resuits div
 
+//First Button
+
 firstGlitch = document.getElementById("glitchButt");
 console.log("This is my first glitch button!",firstGlitch);
 
@@ -95,31 +97,19 @@ function glitchButt(){
   helloWorld = document.createElement("h1");
   helloWorld.innerHTML = "HELLO WORLD";
   helloWorld.style.color = "white";
-
-
-
   //text
   text = document.createElement("p");
   text.innerHTML = "An iconic word phrase for every programmer. The start of ones journey to becoming an amazing one. A simple string of text printed in the programming language that the programmer is using. Which in due time they will learn new things and make something that they ever wanted to make with the power of code and a creative mind one line at a time.";
   text.style.color = "white";
   text.style.fontSize = "20px"
-
-
   //video
   video  = document.createElement("iframe");
   video.style.display = "block";
   video.style.padding = "20px";
-  video.style.margin = "100px";
   video.src = "https://www.youtube.com/embed/Yw6u6YkTgQ4?";
   video.height = "400";
   video.width = "1000";
-
   console.log(video);
-//<iframe width="1217" height="609" src="https://www.youtube.com/embed/Yw6u6YkTgQ4" title="hello world" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  //link me back
-
-
   document.writeln("---");
   document.body.appendChild(lineBreak);
   document.body.appendChild(helloWorld);
@@ -127,12 +117,70 @@ function glitchButt(){
   document.body.appendChild(text);
   document.body.appendChild(lineBreak);
   document.body.appendChild(video);
-
-
-
-
-
   document.body.style.backgroundImage = "url('img/mainhack.gif')";
   document.body.style.backgroundRepeat = "repeat";
+}
+
+//Second Button change the background of our page
+
+secGlitch = document.getElementById("glitchButtTwo");
+console.log("This is my second button that glitches or messes with the page elements", secGlitch);
+console.log(secGlitch);
+
+//add an event listener so when someone clicks on it
+secGlitch.addEventListener("click",glitchTwo);
+
+//create the function that messes with our page
+function glitchTwo(){
+  document.body.style.backgroundImage = "url(img/face.gif)";
+  document.body.style.backgroundRepeat = "repeat";
+}
+
+
+//Third button
+
+thrGlitch = document.getElementById("glitchButtThree");
+console.log(thrGlitch);
+
+//add event listerne when user clicks button
+thrGlitch.addEventListener("click",changeCont);
+
+function changeCont(){
+  //Adding and replacing our first image in lab 10
+  colTwo = document.getElementById("theImg");
+  firstImg = document.getElementById("firstImg");
+  firstImg.remove();
+  newImg = document.createElement("img");
+  newImg.src = "img/GO.gif";
+  console.log(newImg);
+  colTwo.appendChild(newImg);
+  //Onto the next image
+  colFour = document.getElementById("nexImg");
+  secImg = document.getElementById("second");
+  secImg.remove();
+  newImg2 = document.createElement("img");
+  newImg2.src = "img/pochi-pochita.gif"
+  colFour.appendChild(newImg2);
+  //Add another image jojo
+  colOne = document.getElementById("col1img");
+  document.getElementById("head").remove();
+  document.getElementById("break").remove();
+  document.getElementById("pcon").remove();
+  thrImg = document.createElement("img");
+  thrImg.src = "img/jojo-jotaro.gif";
+  colOne.appendChild(thrImg);
+  // code geass
+  colThree = document.getElementById("colthrImg");
+  document.getElementById("headtwo").remove();
+  document.getElementById("breaktwo").remove();
+  document.getElementById("pconTwo").remove();
+  fourImg = document.createElement("img");
+  fourImg.src = "img/stare.gif";
+  colThree.appendChild(fourImg);
+
+
+
+
+
 
 }
