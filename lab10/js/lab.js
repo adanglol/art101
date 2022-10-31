@@ -70,6 +70,7 @@ function wordSort(){
   outputEl.appendChild(inputNodeTwo);
   outputEl.appendChild(lineBreak);
 
+
   inputNodeThree = document.createElement("div");
   inputNodeThree.setAttribute("class","welcome");
   inputNodeThree.innerHTML = "<h1>"+f3+"</h1>";
@@ -176,11 +177,18 @@ function changeCont(){
   document.getElementById("pconTwo").remove();
   fourImg = document.createElement("img");
   fourImg.src = "img/stare.gif";
+
   colThree.appendChild(fourImg);
+}
 
+//Fourth Button
+fourGlitch = document.getElementById("glitchButtFour");
+// Add an event listenr so when the user clicks
+fourGlitch.addEventListener("click",applyAll);
 
-
-
-
-
+//create our function that executes when we click reload the page and apply all our functions and set timeout
+function applyAll(){
+  setTimeout(glitchTwo,20000);
+  setTimeout(changeCont,30000);
+  setTimeout(glitchButt,40000)
 }
