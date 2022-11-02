@@ -1,3 +1,5 @@
+/* Toggling our Divs within JS */
+
 .col-one.special {
   border-top-style: none;
   border-right-style: none;
@@ -60,4 +62,25 @@
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
+}
+
+#output{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.clrButt{
+  padding:20px;
+  font-size: 20px;
+  font-family:'Josefin Sans',sans-serif;
+}
+.clrButt:hover{
+  border-radius: 30px;
+}
+.clrButt.one{
+  background-color: teal;
+}
+
+.clrButt.two{
+  background-color: maroon;
 }

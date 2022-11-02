@@ -32,3 +32,26 @@ resultsButt = $('<button>Click Me!</button>').addClass("button").click(function(
   resultSide.toggleClass("special");
 });
 results.append(resultsButt);
+
+//Lets define linebreak to make it look nice when output
+lineBreak = $('<br />');
+//Output our buttons and changes wihtin a output Div
+resultsSideDiv = $(".col-six");
+//Lets define the two buttons that will change color back and forth
+resultsSideButt = $('<button>Teal</button>').addClass("clrButt one");
+resultsSideButt2 = $('<button>Maroon</button>').addClass("clrButt two");
+//Now lets add an event listener to both to toggle between the colors of both buttons
+resultsSideButt.click(function(){
+  resultsSideButt.removeClass().addClass("clrButt one");
+  resultsSideButt2.removeClass().toggleClass("clrButt one");
+});
+resultsSideButt2.click(function(){
+  resultsSideButt2.removeClass().addClass("clrButt two");
+  resultsSideButt.removeClass().toggleClass("clrButt two");
+});
+
+
+//Appending both buttons to our Div
+resultsSideDiv.append(resultsSideButt);
+resultsSideDiv.append(lineBreak);
+resultsSideDiv.append(resultsSideButt2);
