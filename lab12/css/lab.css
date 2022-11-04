@@ -6,3 +6,40 @@
   padding:20px;
   border:5px outset black;
 }
+
+/* Gryffindor - scarlet */
+/* Racenclaw - blue */
+/* Slytherin - green */
+/* Hufflepuff - gold */
+
+.content.slytherin{
+  background-color:green;
+  border:5px solid black;
+  padding:20px;
+  color:black;
+}
+
+.content.gryffindor{
+  background-color:#d1341b;
+  color:black;
+  border:5px solid black;
+  padding:20px;
+}
+
+.content.ravenclaw{
+  color:black;
+  background-color:#5463eb;
+  border:5px solid black;
+  padding:20px;
+}
+
+.content.hufflepuff{
+  color:black;
+  background-color:#eeff59;
+  border:5px solid black;
+  padding:20px;
+}
+
+#output{
+  text-align: center;
+}
