@@ -43,3 +43,13 @@
 #output{
   text-align: center;
 }
+
+h1.welcome.me a.javalink{
+  color:#e3cfcf;
+  text-decoration: none;
+}
+
+h1.welcome.me a.javalink:hover{
+  color:black;
+  text-decoration: underline;
+}
