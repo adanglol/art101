@@ -12,15 +12,12 @@
 function sortingHat(name){
   //Check to see if the input we are getting is string if not return not valid data type
   if (typeof name === "string") {
-    console.log("this is a string");
-    //if input is string we are going to use length method to count the amount of characters in a string
+    //Get the length of our input
     length = name.length;
-    //Next we are going to declare a variable mod that takes length number of our string and divide it by and then based off that return us string
-    mod = length % 4;
-    //Create our if statements based on our mod value number which should either be 0,1,2,or 3 and return Gryffindor,Ravenclaw, Slytherin, and Hufflepuff
-    //condensing our code
+    //Create an array contains harry potter houses
     houseArray = ["Gryffindor","Ravenclaw","Slytherin","Hufflepuff"];
-    return houseArray[mod];
+    //return one of those houses based on mod division with length and array length
+    return houseArray[length % houseArray.length];
   }else {
     alert("Your input is not a string please try again!");
   };
@@ -29,7 +26,6 @@ function sortingHat(name){
 button = $("#button").click(function(){
   //select our inputfield and get the value and concatenate output
   var name = $("#input").val();
-  console.log(typeof name);
   // Our varaible that runs functions and returns house name
   var house = sortingHat(name);
   var message = "The Sorting Hat has sorted you into" + " " + house + "!";
@@ -51,19 +47,17 @@ button = $("#button").click(function(){
 
   ,"Hufflepuff was one of the four Houses of Hogwarts School of Witchcraft and Wizardry. Its founder was the medieval witch Helga Hufflepuff. Hufflepuff was the most inclusive among the four houses, valuing hard work, dedication, patience, loyalty, and fair play rather than a particular aptitude in its members"
 ];
-  //Append the description to our HTML lets create a paragraph tag while we are at it
 
-  //set up a if condition based off the value of our mod the text box will have the color same color as house
+  //Append the description to our HTML lets create a paragraph tag while we are at it
   classname = ["gryffindor","ravenclaw","slytherin","hufflepuff"];
-  classStyle = classname[mod];
+  classStyle = classname[length % houseArray.length];
   console.log(classStyle);
-  var paragraph = $("<p></p>").html(houseDescribe[mod]).addClass("content "+ classStyle );
+  var paragraph = $("<p></p>").html(houseDescribe[length % houseArray.length]).addClass("content "+ classStyle );
   $("#output").append(paragraph);
 
   //After appending an paragraph with house description also wanted to add image of respective house
-  //first we need an array of the url of images
   arrayImgUrl = ["img/gryffindor.gif","img/ravenclaw.gif","img/slytherin.gif","img/hufflepuff.gif"];
-  indexImg = arrayImgUrl[mod];
+  indexImg = arrayImgUrl[length % houseArray.length];
   var img = $("<img/>").attr("src",indexImg).height(300).width(200);
   $("#output").append(img);
 
