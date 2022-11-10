@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/lab.css">
 	<link rel="stylesheet" type="text/css" href="../lab1/css/lab.css">
 
+	<!-- linking lab 9 css-->
+	<link rel="stylesheet" href="../lab9/css/lab.css">
+
 
 
 	<!-- Adding a lubrary that allows to add a hamburger menu-->
@@ -70,7 +73,45 @@
 			<div class="col-five">
 				<h1>Results</h1>
 			</div>
-			<div class="col-six" id = "output"></div>
+			<div class="col-six" id = "output">
+				<!-- Min and Max are min max threshold of number input from user-->
+			<div class="center">
+					Where should we stop? <input type="number" min=0 max=100 id = "max" value=1 />
+					<br>
+					<br>
+					Which factors should print what?
+					<br>
+					<br>
+
+					<table>
+						<tr>
+							<th>Factor <br>(0-20)</th>
+							<th>Prints What? <br>(Some Text Below)</th>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max=20 id="num0" value=0></td>
+							<td><input type="text" id="text0" value="Text Here"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max=20 id="num1" value=3></td>
+							<td><input type="text" id="text1" value="Text Here"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max=20 id="num2" value=5></td>
+							<td><input type="text" id="text2" value="Text Here"></td>
+						</tr>
+						<tr>
+							<td><input type="number" min=0 max=20 id="num3" value=7></td>
+							<td><input type="text" id="text3" value="Text Here"></td>
+						</tr>
+					</table>
+				</div>
+				<br>
+				<br>
+				<button type= "button" id="run" class="button">Run</button>
+
+
+			</div>
 		</div>
 
 
