@@ -33,25 +33,33 @@ function fizzBuzzBoom(maxNums,factorObj){
     $("#output").append($("<p></p>").addClass("go").html(num.toString() + outputStr));
 
 
+
+
+
+
+
   } // close for loop maxNums
 }; //function
 
 //select our button in our html and attach an event listener that will call our function and get our values
-
 button = $("#run").click(function(){
   //let us know that the button is working
   console.log("Button has been clicked");
   //if statement to check input on our max value for max nums to loop over (need to add)!
-
-
-  //initalize our object that will take in values from our HTML
-  factorObj = {};
-  //Getting Our value from our text boxes and assigning them to our object
-  factorObj[$("#num0").val()] = $("#text0").val();
-  factorObj[$("#num1").val()] = $("#text1").val();
-  factorObj[$("#num2").val()] = $("#text2").val();
-  factorObj[$("#num3").val()] = $("#text3").val();
-  console.log(factorObj);
-  //call our function passing our html value as parameter for maxNums
-  fizzBuzzBoom($("#max").val(),factorObj);
+  if ($("#max").val() > 200){
+    alert("Please choose as smaller number");
+  }else if ($("#max").val() < 0){
+    alert("Please choose a positive integer");
+  }else {
+    //initalize our object that will take in values from our HTML
+    const factorObj = {};
+    //Getting Our value from our text boxes and assigning them to our object
+    factorObj[$("#num0").val()] = $("#text0").val();
+    factorObj[$("#num1").val()] = $("#text1").val();
+    factorObj[$("#num2").val()] = $("#text2").val();
+    factorObj[$("#num3").val()] = $("#text3").val();
+    console.log(factorObj);
+    //call our function passing our html value as parameter for maxNums
+    fizzBuzzBoom($("#max").val(),factorObj);
+  }
 });

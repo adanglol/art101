@@ -1,8 +1,45 @@
 .go {
-  color :black;
+  color :white;
+  margin-top: 0;
+  margin-bottom:0;
 }
 
 div.center{
+  font-size: 30px;
   text-align: center;
   border: 5px solid black;
+  padding:10px;
+  background-color: #493e4f;
+  border-radius: 20px;
+}
+
+div.center table {
+  margin:auto;
+}
+#max{
+  text-align:center;
+  padding:10px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color:#a19e97;
+  font-family:'Josefin Sans',sans-serif;
+
+}
+div.center table tr td{
+  padding:20px;
+}
+
+div.center table tr td input{
+  padding:20px;
+  border-radius: 20px;
+  background-color:#a19e97;
+  font-size: 20px;
+  text-align: center;
+  font-family:'Josefin Sans',sans-serif;
+}
+
+#output {
+  -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+  -moz-column-width: 200px; /* Firefox */
+  column-width: 200px;
 }
