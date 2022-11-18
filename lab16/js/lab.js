@@ -3,6 +3,8 @@
 // Lab 16 : JSON and APIs
 
 console.log("Lab 16 js has been initialized");
+// This will append random images of the compic from API to make button on my HTML to Work for results DIV
+
 
 //add event listener to our button
 $("#comic").click(function(){
@@ -40,3 +42,70 @@ $("#comic").click(function(){
     });
   };
 });
+
+
+// TASK X BONUS MAKING THE LAB ABLE TO NAVIGATE THROUGH EACH COMIC with two buttons code before randomly appends a comic from API
+
+linkNum = 1
+bonusComicObj = $.ajax({
+  url:"https://xkcd.com/" + linkNum + "/info.0.json",
+  method:"GET",
+  datatype:"JSON",
+});
+//if Our API is successfully implemented
+bonusComicObj.done(function(data){
+  console.log("API",data);
+  //Append the first image of API
+  $("#output").prepend($('<img src="" alt="" id="butImg" />').attr('src',data.img).width(500).height(500))
+  $("#output").prepend($('<p id ="year"></p>').html(data.year));
+  $("#output").prepend($('<h1 id ="title"></h1>').html(data.title));
+  $("#output").append("<br />");
+  $("#output").append("<hr />");
+
+  //Let us add event listeners to both our buttons to be able to navigate through different comcics
+
+  $("#previous").click(function(){
+    if (linkNum == 1){
+      alert("This is where first comic in the API starts cannot go back");
+    }else {
+      linkNum -=1
+      //Get API info
+      newComic = $.ajax({
+        url:"https://xkcd.com/" + linkNum + "/info.0.json",
+        method:"GET",
+        datatype:"JSON",
+      });
+
+      newComic.done(function(data){
+        $("#title").html(data.title);
+        $("#year").html(data.year);
+        $("#butImg").attr('src',data.img);
+      });
+    }
+
+  });
+
+  $("#next").click(function(){
+    if (linkNum == 2699){
+      alert("There are no more comics available within the API");
+    } else {
+      linkNum +=1
+      newComicNext = $.ajax({
+        url:"https://xkcd.com/" + linkNum + "/info.0.json",
+        method:"GET",
+        datatype:"JSON",
+      });
+      newComicNext.done(function(data){
+        $("#title").html(data.title);
+        $("#year").html(data.year);
+        $("#butImg").attr('src',data.img);
+      });
+    }
+  });
+});
+
+
+
+
+
+//If our API FAILS

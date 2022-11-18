@@ -1,3 +1,31 @@
+/* for our lab before task bonus which appends random comics  */
+
 #cool {
   border:5px solid black;
+}
+
+
+
+
+#butImg{
+  padding:20px;
+
+}
+
+div.sideButt{
+  display: flex;
+}
+div.sideButt button {
+  height:10%;
+  width: 50%;
+  font-family:'Josefin Sans',sans-serif;
+  padding:20px;
+  font-size: 20px;
+  color:white;
+  background-color: #333;
+}
+
+div.sideButt button:hover{
+  border-radius: 10px;
+  background-color:#a19e97;  color:black;
 }
