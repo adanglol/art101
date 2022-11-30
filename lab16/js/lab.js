@@ -46,6 +46,8 @@ $("#comic").click(function(){
 
 // TASK X BONUS MAKING THE LAB ABLE TO NAVIGATE THROUGH EACH COMIC with two buttons code before randomly appends a comic from API
 
+
+console.log("HERE GOES NOTHING")
 linkNum = 1
 bonusComicObj = $.ajax({
   url:"https://xkcd.com/" + linkNum + "/info.0.json",
@@ -58,7 +60,7 @@ bonusComicObj.done(function(data){
   //Append the first image of API
   $("#output").prepend($('<img src="" alt="" id="butImg" />').attr('src',data.img).width(500).height(500))
   $("#output").prepend($('<p id ="year"></p>').html(data.year));
-  $("#output").prepend($('<h1 id ="title"></h1>').html(data.title));
+  $("#output").prepend($('<h1 id ="title"></h1>').html(data.title + " "+"#"+ data.num));
   $("#output").append("<br />");
   $("#output").append("<hr />");
 
@@ -77,7 +79,7 @@ bonusComicObj.done(function(data){
       });
 
       newComic.done(function(data){
-        $("#title").html(data.title);
+        $("#title").html(data.title  + " "+"#"+ data.num);
         $("#year").html(data.year);
         $("#butImg").attr('src',data.img);
       });
@@ -96,16 +98,12 @@ bonusComicObj.done(function(data){
         datatype:"JSON",
       });
       newComicNext.done(function(data){
-        $("#title").html(data.title);
+        $("#title").html(data.title  + " "+"#"+ data.num);
         $("#year").html(data.year);
         $("#butImg").attr('src',data.img);
       });
     }
   });
 });
-
-
-
-
 
 //If our API FAILS
